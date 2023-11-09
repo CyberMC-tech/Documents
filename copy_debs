@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Define the target directory where you want to copy the files
+target_dir="$HOME/Debian_Files"
+
+# Make sure the target directory exists; create it if it doesn't
+mkdir -p "$target_dir"
+
+# Use a for loop to iterate through the list of "*.deb" files and copy them to the target directory
+while IFS= read -r deb_file; do
+  if [ -e "$deb_file" ]; then
+    cp "$deb_file" "$target_dir"
+    echo "Copied $deb_file to $target_dir"
+  else
+    echo "File not found: $deb_file"
+  fi
+done < <(locate "*.deb")
+
+
