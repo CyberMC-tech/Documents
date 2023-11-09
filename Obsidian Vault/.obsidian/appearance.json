@@ -1,0 +1,10 @@
+{
+  "accentColor": "#10c1b6",
+  "cssTheme": "Firefly",
+  "monospaceFontFamily": "FiraCode Nerd Font",
+  "interfaceFontFamily": "FiraCode Nerd Font",
+  "textFontFamily": "FiraCode Nerd Font",
+  "enabledCssSnippets": [
+    "awesome-brain-manager"
+  ]
+}
